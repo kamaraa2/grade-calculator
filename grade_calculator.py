@@ -7,3 +7,6 @@ average = sum(grades) / len(grades)
 print(average)
 
 print(round(average, 2))
+
+for grade in grades:
+    print(grade) 
