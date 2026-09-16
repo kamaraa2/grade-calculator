@@ -43,5 +43,13 @@ for name, average in student_averages.items():
 
 print(f"Top Performer is {top_name}! with an average of {top_average}!!!")
 
+class_average = sum(student_averages.values()) / len(student_averages)
 
+passing_count = 0
 
+for letter in student_letter_grades.values():
+    if letter in ["A", "B", "C"]:
+        passing_count += 1
+
+print(f"The class average is: {class_average}")
+print(f"Passing count for the amount of students who passed is: {passing_count}")
