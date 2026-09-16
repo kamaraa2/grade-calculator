@@ -38,12 +38,20 @@ Passing count for the amount of students who passed is: 3
 
 ## How It Works
 
-<!-- ⬅️ FILL THIS IN — 3-4 sentences in your own words.
-     Mention: you used a dictionary where each student name (the key) maps to a
-     list of their grades (the value), and say why that structure made sense.
-     Also mention the if/elif/else chain for letter grades, and that order
-     matters there because Python stops at the first match. -->
+I used a dictionary to store the data, where each student's name is the key and a list
+of their grades is the value. A dictionary made sense here because each student needs to
+be looked up by name rather than by position, and a list works as the value because every
+student has more than one grade.
 
+To get from grades to letters, I loop through each student's average and use an
+if/elif/else chain to put it into the right letter range. The order matters because Python
+stops at the first condition that is true, so the highest threshold has to be checked
+first — otherwise every score would fall into the lowest one.
+
+To find the top performer, I keep track of the highest average I have seen so far and
+compare each student against it as I loop through. If a student's average is higher, they
+become the new top performer. Counting how many students passed works the same way, using
+a counter that goes up by one each time a letter grade is A, B, or C.
 
 ## Screencast
 
