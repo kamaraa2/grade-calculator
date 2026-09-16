@@ -11,9 +11,11 @@ student_grades = {
 
 student_averages = {}
 for name, scores in student_grades.items():
-    student_averages[name] = sum(scores) / len(scores)
+    student_averages[name] = round(sum(scores) / len(scores), 2)
 
-print(student_averages) 
+print("Student Averages:")
+for name, average in student_averages.items():
+    print(f"{name}: {average}")
 
 student_letter_grades = {}
 
@@ -41,7 +43,7 @@ for name, average in student_averages.items():
         top_average = average
         top_name = name 
 
-print(f"Top Performer is {top_name}! with an average of {top_average}!!!")
+print(f"Top Performer is {top_name}! with an average of {round(top_average, 2)}!!!")
 
 class_average = sum(student_averages.values()) / len(student_averages)
 
@@ -51,5 +53,5 @@ for letter in student_letter_grades.values():
     if letter in ["A", "B", "C"]:
         passing_count += 1
 
-print(f"The class average is: {class_average}")
+print(f"The class average is: {round(class_average, 2)}")
 print(f"Passing count for the amount of students who passed is: {passing_count}")
