@@ -8,3 +8,10 @@ student_grades = {
     "Sam": [70, 65, 80],
     "Alex": [88, 92, 79],
 }
+
+#Blank Dictionary
+student_averages = {}
+for name, scores in student_grades.items():
+    student_averages[name] = sum(scores) / len(scores)
+
+print(student_averages) 

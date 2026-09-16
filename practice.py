@@ -1,3 +1,10 @@
+#I used this file to practice and learn, and make mistakes, and relearn in.
+#I don't know if I'll get extra credit for turning this in(hopefully I do), but I do want to
+#turn it in as proof of my hard work and commitment to this class instead of just
+#turning in the assignment.
+
+
+
 student_grades = {
     "Maya": [90, 85, 78],
     "Sam": [70, 65, 80],
@@ -21,3 +28,8 @@ for student_name, student_scores in student_grades.items():
     print(student_name, student_scores)  
 
 print(grades)
+
+
+student_counts = {} #Empty Dictionary
+
+student_counts["Maya"] = 3 #inserts key and value into empty dictionary
