@@ -47,7 +47,7 @@ Passing count for the amount of students who passed is: 3
 
 ## Screencast
 
-<!-- ⬅️ PASTE YOUR LOOM LINK HERE -->
+https://www.loom.com/share/7bdf79344afc40eaaf8ca00aded4e52a
 
 ## Author
 
