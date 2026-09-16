@@ -1,18 +1,19 @@
 # Student Grade Calculator
 
-<!-- FILL IN: 2-3 sentences. What does this program do, and who is it for? -->
-<!-- Example shape: "A Python program that calculates and analyzes student grades
-     for a single course. It takes ... and reports ..." -->
+A Python program that calculates and analyzes student grades for a single course.
+It stores each student's grades, calculates their average, assigns a letter grade,
+identifies the top performer, and reports class-wide statistics.
 
+Built for CST 205 Module 1.
 
 ## Features
 
-<!-- FILL IN: what does it actually do? One line each. -->
-- Stores student names and their grades
--
--
--
--
+- Stores student names and their grades in a dictionary
+- Calculates each student's average grade
+- Assigns letter grades (A-F) using a standard grading scale
+- Identifies the top performing student and their average
+- Calculates the overall class average
+- Counts how many students received a passing grade (C or better)
 
 ## How to Run
 
@@ -24,21 +25,29 @@ python3 grade_calculator.py
 
 ## Example Output
 
-<!-- FILL IN: paste your actual terminal output here, between the ``` marks -->
 ```
-
+Student Averages:
+Maya: 84.33
+Sam: 71.67
+Alex: 86.33
+{'Maya': 'B', 'Sam': 'C', 'Alex': 'B'}
+Top Performer is Alex! with an average of 86.33!!!
+The class average is: 80.78
+Passing count for the amount of students who passed is: 3
 ```
 
 ## How It Works
 
-<!-- FILL IN: a short paragraph in your own words. Mention the data structures
-     you chose (dictionary of lists) and why. This is where you show understanding. -->
+<!-- ⬅️ FILL THIS IN — 3-4 sentences in your own words.
+     Mention: you used a dictionary where each student name (the key) maps to a
+     list of their grades (the value), and say why that structure made sense.
+     Also mention the if/elif/else chain for letter grades, and that order
+     matters there because Python stops at the first match. -->
 
 
 ## Screencast
 
-<!-- FILL IN: paste your Loom link here after recording -->
-
+<!-- ⬅️ PASTE YOUR LOOM LINK HERE -->
 
 ## Author
 
